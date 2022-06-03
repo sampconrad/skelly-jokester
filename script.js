@@ -138,7 +138,7 @@ async function getJokes() {
 		} else {
 			joke = data.joke;
 		}
-		// Print Joke on Screen
+		// Display joke text on screen
 		jokeText.textContent = joke;
 		// Text-to-Speech
 		tellMe(joke);
