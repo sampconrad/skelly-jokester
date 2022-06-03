@@ -1,5 +1,6 @@
 const button = document.getElementById('button');
 const audioElement = document.getElementById('audio');
+const jokeText = document.getElementById('joke');
 
 // VoiceRSS Javascript SDK
 const VoiceRSS = {
@@ -137,6 +138,8 @@ async function getJokes() {
 		} else {
 			joke = data.joke;
 		}
+		// Print Joke on Screen
+		jokeText.textContent = joke;
 		// Text-to-Speech
 		tellMe(joke);
 		// Disable Button
